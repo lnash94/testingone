@@ -1,0 +1,9 @@
+[package]
+org = "aiservice2"
+name = "listkb"
+version = "0.1.0"
+distribution = "2201.14.0"
+title = "listKB"
+
+[build-options]
+sticky = true

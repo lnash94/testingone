@@ -1,0 +1,4 @@
+version: 2
+contexts:
+  - org: aiservice2
+    project: default
