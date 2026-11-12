@@ -1,0 +1,75 @@
+openapi: 3.0.1
+info:
+  title: Knowledge base
+  version: 1.0.0
+paths:
+  /retrieve:
+    post:
+      operationId: retrieve
+      description: Returns the chunks of the knowledge base most similar to a query.
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              required:
+                - user_query
+              properties:
+                rag_component_id:
+                  type: string
+                user_query:
+                  type: string
+                max_retrieve_chunks:
+                  type: integer
+                min_similarity_threshold:
+                  type: number
+      responses:
+        '200':
+          description: The query and the chunks retrieved for it.
+  /ingest/files:
+    post:
+      operationId: ingestFiles
+      description: Parses, chunks and embeds an uploaded file into the knowledge base.
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required:
+                - file
+              properties:
+                file:
+                  type: string
+                  format: binary
+                chunking_strategy:
+                  type: string
+                  default: recursive
+                max_segment_size:
+                  type: integer
+                  default: 1000
+                max_overlap_size:
+                  type: integer
+                  default: 200
+      responses:
+        '200':
+          description: The file was ingested.
+  /ingest/content:
+    post:
+      operationId: ingestContent
+      description: Embeds chunks and adds them to the knowledge base.
+      responses:
+        '200':
+          description: The chunks were ingested.
+components:
+  securitySchemes:
+    wso2CloudApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      x-ballerina-name: apiKey
+security:
+  - wso2CloudApiKeyAuth: []
+servers:
+  - url: http://localhost:8080

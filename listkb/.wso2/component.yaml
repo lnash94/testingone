@@ -1,0 +1,15 @@
+schemaVersion: '1.2'
+dependencies:
+  connectionReferences:
+    - name: newKB_knowledge_base
+      resourceRef: service:ai-services/newkb/knowledge-base
+    - name: testKB_knowledge_base
+      resourceRef: service:ai-services/testkb/knowledge-base
+    - name: testKB_knowledge_base1
+      resourceRef: service:ai-services/testkb/knowledge-base
+    - name: Currency_Converter_API_converter
+      resourceRef: service:ai-services/currency-converter-k3lz4/converter
+    - name: Currency_Converter_API_converter1
+      resourceRef: service:ai-services/currency-converter-k3lz4/converter
+    - name: testKB_knowledge_base2
+      resourceRef: service:ai-services/testkb/knowledge-base
