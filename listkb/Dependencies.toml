@@ -452,9 +452,3 @@ modules = [
 	{org = "ballerinax", packageName = "ai.wso2.integration", moduleName = "ai.wso2.integration"}
 ]
 
-[[tool]]
-id = "openapi"
-org = "ballerina"
-name = "tool.openapi"
-version = "2.4.4"
-

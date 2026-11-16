@@ -8,22 +8,3 @@ title = "listKB"
 [build-options]
 sticky = true
 
-[[tool.openapi]]
-id = "newkbknowledgebase"
-targetModule = "newkbknowledgebase"
-filePath = ".wso2/newkbknowledgebase-spec.yaml"
-
-[[tool.openapi]]
-id = "currencyconverterapiconverter"
-targetModule = "currencyconverterapiconverter"
-filePath = ".wso2/currencyconverterapiconverter-spec.yaml"
-
-[[tool.openapi]]
-id = "currencyconverterapiconverter1"
-targetModule = "currencyconverterapiconverter1"
-filePath = ".wso2/currencyconverterapiconverter1-spec.yaml"
-
-[[tool.openapi]]
-id = "currencyconverterapiconverter2"
-targetModule = "currencyconverterapiconverter2"
-filePath = ".wso2/currencyconverterapiconverter2-spec.yaml"
