@@ -12,9 +12,9 @@ org = "aiservice2"
 name = "listkb"
 version = "0.1.0"
 dependencies = [
+	{org = "ballerina", name = "ai"},
 	{org = "ballerina", name = "data.jsondata"},
 	{org = "ballerina", name = "http"},
-	{org = "ballerina", name = "io"},
 	{org = "ballerina", name = "log"},
 	{org = "ballerina", name = "mime"},
 	{org = "ballerina", name = "os"},
@@ -25,6 +25,7 @@ modules = [
 	{org = "aiservice2", packageName = "listkb", moduleName = "listkb"},
 	{org = "aiservice2", packageName = "listkb", moduleName = "listkb.currencyconverterapiconverter"},
 	{org = "aiservice2", packageName = "listkb", moduleName = "listkb.currencyconverterapiconverter1"},
+	{org = "aiservice2", packageName = "listkb", moduleName = "listkb.currencyconverterapiconverter2"},
 	{org = "aiservice2", packageName = "listkb", moduleName = "listkb.newkbknowledgebase"}
 ]
 
@@ -57,6 +58,11 @@ dependencies = [
 	{org = "ballerina", name = "time"},
 	{org = "ballerina", name = "url"},
 	{org = "ballerina", name = "uuid"}
+]
+modules = [
+	{org = "ballerina", packageName = "ai", moduleName = "ai"},
+	{org = "ballerina", packageName = "ai", moduleName = "ai.intelligence"},
+	{org = "ballerina", packageName = "ai", moduleName = "ai.observe"}
 ]
 
 [[package]]
@@ -179,9 +185,6 @@ version = "1.8.3"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.value"}
-]
-modules = [
-	{org = "ballerina", packageName = "io", moduleName = "io"}
 ]
 
 [[package]]

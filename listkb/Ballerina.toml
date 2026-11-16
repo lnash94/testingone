@@ -22,3 +22,8 @@ filePath = ".wso2/currencyconverterapiconverter-spec.yaml"
 id = "currencyconverterapiconverter1"
 targetModule = "currencyconverterapiconverter1"
 filePath = ".wso2/currencyconverterapiconverter1-spec.yaml"
+
+[[tool.openapi]]
+id = "currencyconverterapiconverter2"
+targetModule = "currencyconverterapiconverter2"
+filePath = ".wso2/currencyconverterapiconverter2-spec.yaml"
